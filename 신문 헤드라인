@@ -1,0 +1,12 @@
+t = input()
+c = []
+
+for i in range(len(t)):
+    if(ord(t[i]) >= 97 and ord(t[i]) <= 122):
+        c.append(ord(t[i])-32)
+    else:
+        c.append(ord(t[i]))
+        
+for i in range(len(c)):
+    print(chr(c[i]),end='')
+
