@@ -1,0 +1,11 @@
+T = int(input())
+num = [0]*2
+ 
+for test_case in range(0, T):    
+    num = list(map(int, input().split()))       
+    if(num[0]>num[1]):
+        print("#" + str(test_case+1) + " >")         
+    elif(num[0]<num[1]):
+        print("#" + str(test_case+1) + " <")         
+    elif(num[0]==num[1]):
+        print("#" + str(test_case+1) + " =")
