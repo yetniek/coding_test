@@ -1,0 +1,7 @@
+t = input()
+
+total = 0
+for i in range(len(t)):
+    total += int(t[i])
+    
+print(total)
