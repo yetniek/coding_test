@@ -1,0 +1,13 @@
+T = int(input())
+ 
+num = [0]*10
+sum = [0]*T
+ 
+for test_case in range(0, T):
+    num = list(map(int, input().split()))
+    for i in range(10):
+        if num[i]%2!=0:
+            sum[test_case] += num[i]
+             
+for k in range(T):
+    print("#" + str(k+1) + " " + str(sum[k]))
