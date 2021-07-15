@@ -1,0 +1,5 @@
+t = int(input())
+print(t, end=' ')
+for i in range(t):
+    t -= 1
+    print(t, end = ' ')
