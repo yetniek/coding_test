@@ -1,0 +1,13 @@
+T = int(input())
+num = [0]*10
+sum = [0]*T
+avg = [0]*T
+ 
+for test_case in range(0, T):
+    num = list(map(int, input().split()))
+    for i in range(10):
+        sum[test_case]+=num[i]
+        avg[test_case]=sum[test_case]/10
+      
+for k in range(T):
+    print("#" + str(k+1) + " " + str(round(avg[k])))
