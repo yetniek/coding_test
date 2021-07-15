@@ -1,0 +1,13 @@
+T = int(input())
+num = [0] * 10
+temp = 0
+ 
+for test_case in range(0, T):
+    num = list(map(int, input().split()))
+    for i in range(10):
+        for j in range(1, 10):
+            if (num[i] > num[j]):
+                temp = num[i]
+                num[i] = num[j]
+                num[j] = temp
+    print("#" + str(test_case + 1) + " " + str(num[1]))
