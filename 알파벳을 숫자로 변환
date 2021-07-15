@@ -1,0 +1,3 @@
+t = input()
+for i in range(26):
+    print(ord(t[i])-64, end = ' ')
